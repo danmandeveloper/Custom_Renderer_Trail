@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Test_Script : MonoBehaviour
+public class Ball_Movement : MonoBehaviour
 {
     public float offset, speed;
     public AnimationCurve height, movement;
