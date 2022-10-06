@@ -16,7 +16,6 @@ public class BoxBJigglin : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        transform.localScale = new Vector3(1, 1, 1); 
-        
+        transform.localScale = new Vector3(1, 1, 1);
     }
 }

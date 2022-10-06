@@ -7,7 +7,7 @@ using UnityEngine;
 public class Ball_Movement : MonoBehaviour
 {
     [SerializeField]
-    public int l;
+    public int line;
     private LineRenderer lrenderer;
     private Vector3 compA, compB;
     private Vector3 desiredPosition;
@@ -19,7 +19,7 @@ public class Ball_Movement : MonoBehaviour
     private void Start()
     {
         lrenderer = GetComponent<LineRenderer>();
-        lrenderer.material.color = Color.magenta;
+        lrenderer.material.color = Color.black;
     }
 
     private void Update()
@@ -35,9 +35,9 @@ public class Ball_Movement : MonoBehaviour
         {
             rate = 0;
         } 
-        lrenderer.positionCount = l;
+        lrenderer.positionCount = line;
         compA = transform.position;
-        for(int i = 0; i< l; i++)
+        for(int i = 0; i< line; i++)
         {
             compB = lrenderer.GetPosition(i);
             lrenderer.SetPosition(i, compA);
